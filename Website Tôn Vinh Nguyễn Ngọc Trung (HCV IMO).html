@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nguyễn Ngọc Trung – Trí Tuệ & Nội Lực</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #05070c;
+      --accent: #7bd3ff;
+      --gold: #f3d98b;
+      --text: #eef2fb;
+      --muted: #9aa3b2;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #0c1635, var(--bg));
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 72px;
+      letter-spacing: 1.2px;
+      background: linear-gradient(90deg, var(--accent), var(--gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 26px;
+    }
+
+    header p {
+      font-size: 22px;
+      color: var(--muted);
+      max-width: 860px;
+      margin: 0 auto;
+      line-height: 1.9;
+    }
+
+    .scroll {
+      margin-top: 80px;
+      font-size: 14px;
+      letter-spacing: 4px;
+      color: var(--accent);
+      animation: fade 2s infinite;
+    }
+
+    @keyframes fade {
+      0%,100% { opacity: 0.25; }
+      50% { opacity: 1; }
+    }
+
+    section {
+      padding: 120px 10%;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 44px;
+      margin-bottom: 36px;
+      color: var(--gold);
+    }
+
+    .about p {
+      font-size: 19px;
+      line-height: 2.05;
+      max-width: 1000px;
+    }
+
+    .traits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 48px;
+      margin-top: 90px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #121c42, #080d22);
+      border-radius: 36px;
+      padding: 46px;
+      transition: transform 0.45s ease, box-shadow 0.45s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-22px);
+      box-shadow: 0 42px 120px rgba(0,0,0,0.65);
+    }
+
+    .card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      margin-bottom: 18px;
+      color: var(--accent);
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.9;
+      color: var(--muted);
+    }
+
+    .quote {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      line-height: 1.8;
+      max-width: 1100px;
+      margin: 0 auto;
+      background: linear-gradient(90deg, var(--gold), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    footer {
+      padding: 90px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    footer strong { color: var(--gold); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Nguyễn Ngọc Trung</h1>
+    <p>
+      Một con người hội tụ giữa trí tuệ sắc bén và nội lực trầm lắng,
+      nơi sự hiểu biết không ồn ào nhưng luôn đủ sâu để tạo nên khác biệt.
+    </p>
+    <div class="scroll">SCROLL</div>
+  </div>
+</header>
+
+<section class="about">
+  <h2 class="section-title">Chân Dung Nguyễn Ngọc Trung</h2>
+  <p>
+    Nguyễn Ngọc Trung là kiểu người càng tiếp xúc càng nhận ra chiều sâu.
+    Anh không phô bày kiến thức, mà để tư duy và hành động tự chứng minh năng lực.
+    <br /><br />
+    Trong mọi hoàn cảnh, anh giữ được sự điềm tĩnh,
+    suy nghĩ thấu đáo trước khi quyết định,
+    và luôn chọn con đường mang lại giá trị lâu dài thay vì lợi ích ngắn hạn.
+  </p>
+
+  <div class="traits">
+    <div class="card">
+      <h3>Trí Tuệ Sâu</h3>
+      <p>
+        Không chỉ biết nhiều,
+        mà hiểu rõ bản chất vấn đề.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Điềm Tĩnh</h3>
+      <p>
+        Giữ vững sự bình thản
+        ngay cả trong áp lực lớn.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Nội Lực</h3>
+      <p>
+        Sức mạnh đến từ bên trong,
+        không cần phô trương ra ngoài.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Giá Trị Lâu Dài</h3>
+      <p>
+        Luôn hướng tới những điều bền vững
+        và có ý nghĩa thực sự.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="quote">
+    “Sự khác biệt thật sự
+    đến từ chiều sâu của tư duy
+    và bản lĩnh giữ vững giá trị của chính mình.”
+  </div>
+</section>
+
+<footer>
+  Website được tạo ra để tôn vinh <strong>Nguyễn Ngọc Trung</strong> —
+  biểu tượng của trí tuệ, nội lực và sự điềm tĩnh bền vững.
+</footer>
+
+</body>
+</html>

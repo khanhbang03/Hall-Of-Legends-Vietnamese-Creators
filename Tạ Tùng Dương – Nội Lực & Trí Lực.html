@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tạ Tùng Dương – Nội Lực & Trí Lực</title>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #05080e;
+      --accent: #d2b48c;
+      --green: #5fd1a5;
+      --text: #eef1f7;
+      --muted: #9aa3b5;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #0f162b, var(--bg));
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    header h1 {
+      font-family: 'Spectral', serif;
+      font-size: 70px;
+      color: var(--accent);
+      letter-spacing: 1.5px;
+      margin-bottom: 24px;
+    }
+
+    header p {
+      font-size: 21px;
+      color: var(--muted);
+      max-width: 780px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    .scroll {
+      margin-top: 70px;
+      font-size: 14px;
+      letter-spacing: 3px;
+      color: var(--green);
+      animation: fade 2s infinite;
+    }
+
+    @keyframes fade {
+      0%,100% { opacity: 0.25; }
+      50% { opacity: 1; }
+    }
+
+    section {
+      padding: 120px 10%;
+    }
+
+    .section-title {
+      font-family: 'Spectral', serif;
+      font-size: 40px;
+      color: var(--accent);
+      margin-bottom: 30px;
+    }
+
+    .about p {
+      font-size: 19px;
+      line-height: 1.95;
+      max-width: 940px;
+      color: var(--text);
+    }
+
+    .core {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 38px;
+      margin-top: 60px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #141d3a, #090f21);
+      border-radius: 28px;
+      padding: 38px;
+      transition: transform 0.45s ease, box-shadow 0.45s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-16px);
+      box-shadow: 0 30px 90px rgba(0,0,0,0.55);
+    }
+
+    .card h3 {
+      font-family: 'Spectral', serif;
+      font-size: 24px;
+      color: var(--green);
+      margin-bottom: 16px;
+    }
+
+    .card p {
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 16px;
+    }
+
+    .quote {
+      font-family: 'Spectral', serif;
+      font-size: 32px;
+      text-align: center;
+      color: var(--accent);
+      max-width: 980px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    footer {
+      padding: 70px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    footer strong { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Tạ Tùng Dương</h1>
+    <p>
+      Một con người được tôi luyện bởi nội lực vững vàng
+      và trí lực sắc bén.
+      Không ồn ào, không phô trương,
+      nhưng luôn để lại dấu ấn sâu.
+    </p>
+    <div class="scroll">SCROLL</div>
+  </div>
+</header>
+
+<section class="about">
+  <h2 class="section-title">Chân Dung Tạ Tùng Dương</h2>
+  <p>
+    Tạ Tùng Dương là kiểu người càng tiếp xúc càng nhận ra giá trị bên trong.
+    Anh sở hữu sự điềm tĩnh đến từ nội lực mạnh mẽ,
+    và tư duy sắc sảo được rèn giũa qua trải nghiệm thực tế.
+    <br /><br />
+    Với những người xung quanh, anh là chỗ dựa đáng tin cậy.
+    Với những người học hỏi từ xa, anh là minh chứng rằng
+    sức mạnh bền vững nhất luôn đến từ trí tuệ và bản lĩnh nội tâm.
+  </p>
+
+  <div class="core">
+    <div class="card">
+      <h3>Nội Lực</h3>
+      <p>
+        Vững vàng từ bên trong.
+        Không bị cuốn theo ngoại cảnh hay cảm xúc nhất thời.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Trí Tuệ</h3>
+      <p>
+        Suy nghĩ thấu đáo,
+        nhìn ra bản chất trước khi hành động.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Điềm Tĩnh</h3>
+      <p>
+        Bình thản trước biến động,
+        giữ được sự sáng suốt trong mọi hoàn cảnh.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Bền Bỉ</h3>
+      <p>
+        Không vội vàng.
+        Tiến lên bằng nhịp độ chắc chắn và dài hơi.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="quote">
+    “Sức mạnh lớn nhất không nằm ở việc vượt qua người khác,
+    mà ở việc luôn làm chủ chính mình.”
+  </div>
+</section>
+
+<footer>
+  Website được tạo ra để tôn vinh <strong>Tạ Tùng Dương</strong> —
+  một biểu tượng của nội lực, trí tuệ và sự bền bỉ thầm lặng.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trần Nhật Minh – Chuẩn Mực Của Bản Lĩnh</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #07090f;
+      --accent: #cfa95c;
+      --blue: #7aa2ff;
+      --text: #eef0f6;
+      --muted: #9aa2b4;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #12162b, var(--bg));
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    header h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 68px;
+      color: var(--accent);
+      letter-spacing: 1.5px;
+      margin-bottom: 22px;
+    }
+
+    header p {
+      font-size: 21px;
+      color: var(--muted);
+      max-width: 760px;
+      margin: 0 auto;
+      line-height: 1.75;
+    }
+
+    .scroll {
+      margin-top: 70px;
+      font-size: 14px;
+      letter-spacing: 3px;
+      color: var(--blue);
+      animation: fade 2s infinite;
+    }
+
+    @keyframes fade {
+      0%,100% { opacity: 0.2; }
+      50% { opacity: 1; }
+    }
+
+    section {
+      padding: 120px 10%;
+    }
+
+    .section-title {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 40px;
+      color: var(--accent);
+      margin-bottom: 30px;
+    }
+
+    .about p {
+      font-size: 19px;
+      line-height: 1.9;
+      max-width: 920px;
+      color: var(--text);
+    }
+
+    .pillars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 36px;
+      margin-top: 60px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #141a36, #0a0e1f);
+      border-radius: 26px;
+      padding: 36px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-14px);
+      box-shadow: 0 28px 80px rgba(0,0,0,0.55);
+    }
+
+    .card h3 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 24px;
+      color: var(--blue);
+      margin-bottom: 16px;
+    }
+
+    .card p {
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .quote {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 32px;
+      text-align: center;
+      color: var(--accent);
+      max-width: 960px;
+      margin: 0 auto;
+      line-height: 1.65;
+    }
+
+    footer {
+      padding: 70px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    footer strong { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Trần Nhật Minh</h1>
+    <p>
+      Một con người được định hình bởi kỷ luật, bản lĩnh
+      và sự nghiêm túc với con đường mình đã chọn.
+      Không phô trương – nhưng luôn tạo ra trọng lượng.
+    </p>
+    <div class="scroll">SCROLL</div>
+  </div>
+</header>
+
+<section class="about">
+  <h2 class="section-title">Chân Dung Trần Nhật Minh</h2>
+  <p>
+    Trần Nhật Minh là kiểu người khiến người khác phải nể vì sự điềm tĩnh
+    và thái độ nghiêm túc với mọi việc mình làm. Anh không cần phải chứng minh
+    bản thân bằng lời nói, bởi chính cách anh lựa chọn, hành động
+    và chịu trách nhiệm đã nói lên tất cả.
+    <br /><br />
+    Với những người xung quanh, anh là hình mẫu của sự ổn định và đáng tin cậy.
+    Với những người đi sau, anh là một chuẩn mực rõ ràng: sống có nguyên tắc,
+    có mục tiêu và không thỏa hiệp với sự hời hợt.
+  </p>
+
+  <div class="pillars">
+    <div class="card">
+      <h3>Bản Lĩnh</h3>
+      <p>
+        Không dao động trước áp lực.
+        Dám đứng vững với lựa chọn của mình đến cùng.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Kỷ Luật</h3>
+      <p>
+        Tự đặt ra giới hạn cao
+        và nghiêm túc tuân thủ mỗi ngày.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Trách Nhiệm</h3>
+      <p>
+        Làm đến nơi đến chốn.
+        Không đổ lỗi, không né tránh.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Chiều Sâu</h3>
+      <p>
+        Suy nghĩ kỹ trước khi hành động.
+        Hiểu rõ bản chất thay vì chạy theo bề nổi.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="quote">
+    “Giá trị thật không nằm ở việc được nhìn thấy nhiều,
+    mà ở việc luôn đứng vững dù không có ai nhìn.”
+  </div>
+</section>
+
+<footer>
+  Website được tạo ra để tôn vinh <strong>Trần Nhật Minh</strong> —
+  một chuẩn mực của bản lĩnh, kỷ luật và trách nhiệm.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trịnh Ngọc Hưng – Bản Lĩnh & Chuẩn Mực</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #050609;
+      --accent: #cfae70;
+      --steel: #8fb4c9;
+      --text: #eef1f7;
+      --muted: #9aa1ad;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #0e1624, var(--bg));
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 74px;
+      letter-spacing: 1.6px;
+      color: var(--accent);
+      margin-bottom: 28px;
+    }
+
+    header p {
+      font-size: 22px;
+      color: var(--muted);
+      max-width: 880px;
+      margin: 0 auto;
+      line-height: 1.95;
+    }
+
+    .scroll {
+      margin-top: 82px;
+      font-size: 14px;
+      letter-spacing: 4px;
+      color: var(--steel);
+      animation: fade 2s infinite;
+    }
+
+    @keyframes fade {
+      0%,100% { opacity: 0.25; }
+      50% { opacity: 1; }
+    }
+
+    section {
+      padding: 120px 10%;
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 46px;
+      margin-bottom: 38px;
+      color: var(--accent);
+    }
+
+    .about p {
+      font-size: 19px;
+      line-height: 2.1;
+      max-width: 1020px;
+    }
+
+    .pillars {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 52px;
+      margin-top: 96px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #131c2f, #090d19);
+      border-radius: 38px;
+      padding: 48px;
+      transition: transform 0.45s ease, box-shadow 0.45s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-24px);
+      box-shadow: 0 46px 130px rgba(0,0,0,0.65);
+    }
+
+    .card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: var(--steel);
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.95;
+      color: var(--muted);
+    }
+
+    .quote {
+      text-align: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 38px;
+      line-height: 1.85;
+      max-width: 1120px;
+      margin: 0 auto;
+      color: var(--accent);
+    }
+
+    footer {
+      padding: 92px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    footer strong { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Trịnh Ngọc Hưng</h1>
+    <p>
+      Một con người thể hiện bản lĩnh qua sự điềm đạm,
+      khẳng định giá trị bằng chuẩn mực,
+      và tạo uy tín bằng sự nhất quán trong từng hành động.
+    </p>
+    <div class="scroll">SCROLL</div>
+  </div>
+</header>
+
+<section class="about">
+  <h2 class="section-title">Chân Dung Trịnh Ngọc Hưng</h2>
+  <p>
+    Trịnh Ngọc Hưng là người coi trọng nguyên tắc và chuẩn mực sống.
+    Anh không tìm kiếm sự chú ý,
+    mà để thái độ, trách nhiệm và cách làm việc nói thay.
+    <br /><br />
+    Trong tập thể, anh mang lại cảm giác tin cậy.
+    Trong công việc, anh giữ vững chất lượng.
+    Và trong cuộc sống, anh chọn con đường thẳng thắn,
+    rõ ràng và lâu dài.
+  </p>
+
+  <div class="pillars">
+    <div class="card">
+      <h3>Bản Lĩnh</h3>
+      <p>
+        Đứng vững trước áp lực,
+        không thỏa hiệp với những giá trị cốt lõi.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Chuẩn Mực</h3>
+      <p>
+        Luôn giữ tiêu chuẩn cao
+        trong mọi việc mình làm.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Nhất Quán</h3>
+      <p>
+        Lời nói đi đôi với hành động,
+        trước sau như một.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Uy Tín</h3>
+      <p>
+        Giá trị được xây dựng
+        bằng thời gian và sự nghiêm túc.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="quote">
+    “Uy tín không đến từ lời hứa lớn,
+    mà đến từ việc giữ trọn những điều nhỏ nhất mỗi ngày.”
+  </div>
+</section>
+
+<footer>
+  Website được tạo ra để tôn vinh <strong>Trịnh Ngọc Hưng</strong> —
+  biểu tượng của bản lĩnh, chuẩn mực và uy tín bền vững.
+</footer>
+
+</body>
+</html>

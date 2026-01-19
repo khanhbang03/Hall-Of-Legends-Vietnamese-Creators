@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phạm Văn Hạnh – Vững Vàng & Nhân Hậu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #06080f;
+      --accent: #e0c27a;
+      --emerald: #6fd1b2;
+      --text: #f0f3fa;
+      --muted: #9aa4b8;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #0f1830, var(--bg));
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    header h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 70px;
+      color: var(--accent);
+      letter-spacing: 1.4px;
+      margin-bottom: 24px;
+    }
+
+    header p {
+      font-size: 21px;
+      color: var(--muted);
+      max-width: 820px;
+      margin: 0 auto;
+      line-height: 1.85;
+    }
+
+    .scroll {
+      margin-top: 72px;
+      font-size: 14px;
+      letter-spacing: 3px;
+      color: var(--emerald);
+      animation: fade 2s infinite;
+    }
+
+    @keyframes fade {
+      0%,100% { opacity: 0.25; }
+      50% { opacity: 1; }
+    }
+
+    section {
+      padding: 120px 10%;
+    }
+
+    .section-title {
+      font-family: 'Merriweather', serif;
+      font-size: 42px;
+      color: var(--accent);
+      margin-bottom: 34px;
+    }
+
+    .about p {
+      font-size: 19px;
+      line-height: 2.0;
+      max-width: 1000px;
+      color: var(--text);
+    }
+
+    .values {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 44px;
+      margin-top: 76px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #151d3e, #090f23);
+      border-radius: 34px;
+      padding: 44px;
+      transition: transform 0.45s ease, box-shadow 0.45s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-20px);
+      box-shadow: 0 40px 120px rgba(0,0,0,0.6);
+    }
+
+    .card h3 {
+      font-family: 'Merriweather', serif;
+      font-size: 26px;
+      color: var(--emerald);
+      margin-bottom: 18px;
+    }
+
+    .card p {
+      color: var(--muted);
+      line-height: 1.9;
+      font-size: 16px;
+    }
+
+    .quote {
+      font-family: 'Merriweather', serif;
+      font-size: 34px;
+      text-align: center;
+      color: var(--accent);
+      max-width: 1080px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    footer {
+      padding: 90px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    footer strong { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Phạm Văn Hạnh</h1>
+    <p>
+      Một con người tạo dựng niềm tin bằng sự vững vàng,
+      giữ gìn giá trị bằng sự nhân hậu,
+      và lan tỏa ảnh hưởng bằng chính cách sống mỗi ngày.
+    </p>
+    <div class="scroll">SCROLL</div>
+  </div>
+</header>
+
+<section class="about">
+  <h2 class="section-title">Chân Dung Phạm Văn Hạnh</h2>
+  <p>
+    Phạm Văn Hạnh là kiểu người khiến người khác an tâm khi ở bên cạnh.
+    Không cần nói nhiều, anh để sự ổn định trong suy nghĩ,
+    sự nhất quán trong hành động
+    và sự tử tế trong đối nhân xử thế tự nhiên thể hiện.
+    <br /><br />
+    Với những người xung quanh, anh là điểm tựa đáng tin.
+    Với những ai học hỏi từ anh, điều đọng lại không chỉ là năng lực,
+    mà còn là cách làm người — bền bỉ, chân thành và có trách nhiệm.
+  </p>
+
+  <div class="values">
+    <div class="card">
+      <h3>Vững Vàng</h3>
+      <p>
+        Giữ lập trường rõ ràng.
+        Không dao động trước khó khăn hay áp lực.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Nhân Hậu</h3>
+      <p>
+        Đối xử tử tế với người khác,
+        ngay cả khi không cần phải làm vậy.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Trách Nhiệm</h3>
+      <p>
+        Nhận việc là làm đến cùng.
+        Luôn chịu trách nhiệm cho lựa chọn của mình.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Ảnh Hưởng Tích Cực</h3>
+      <p>
+        Không áp đặt.
+        Truyền cảm hứng bằng chính hành vi hàng ngày.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="quote">
+    “Sự tôn trọng bền vững nhất
+    đến từ cách một con người sống nhất quán với giá trị của mình.”
+  </div>
+</section>
+
+<footer>
+  Website được tạo ra để tôn vinh <strong>Phạm Văn Hạnh</strong> —
+  biểu tượng của sự vững vàng, nhân hậu và giá trị lâu dài.
+</footer>
+
+</body>
+</html>

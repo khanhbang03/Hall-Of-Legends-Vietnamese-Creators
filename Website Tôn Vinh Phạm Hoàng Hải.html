@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phạm Hoàng Hải – Bền Bỉ & Chuẩn Xác</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #040509;
+      --accent: #d6b36a;
+      --steel: #7fb0c9;
+      --text: #f2f5fb;
+      --muted: #9aa2b1;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #0b1526, var(--bg));
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    header h1 {
+      font-family: 'EB Garamond', serif;
+      font-size: 74px;
+      letter-spacing: 1.4px;
+      color: var(--accent);
+      margin-bottom: 28px;
+    }
+
+    header p {
+      font-size: 22px;
+      color: var(--muted);
+      max-width: 920px;
+      margin: 0 auto;
+      line-height: 1.95;
+    }
+
+    .scroll {
+      margin-top: 86px;
+      font-size: 14px;
+      letter-spacing: 4px;
+      color: var(--steel);
+      animation: fade 2s infinite;
+    }
+
+    @keyframes fade {
+      0%,100% { opacity: 0.25; }
+      50% { opacity: 1; }
+    }
+
+    section {
+      padding: 120px 10%;
+    }
+
+    .section-title {
+      font-family: 'EB Garamond', serif;
+      font-size: 46px;
+      margin-bottom: 40px;
+      color: var(--accent);
+    }
+
+    .about p {
+      font-size: 19px;
+      line-height: 2.1;
+      max-width: 1050px;
+    }
+
+    .traits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 56px;
+      margin-top: 104px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #141c31, #090d1a);
+      border-radius: 42px;
+      padding: 52px;
+      transition: transform 0.45s ease, box-shadow 0.45s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-28px);
+      box-shadow: 0 50px 150px rgba(0,0,0,0.7);
+    }
+
+    .card h3 {
+      font-family: 'EB Garamond', serif;
+      font-size: 28px;
+      margin-bottom: 22px;
+      color: var(--steel);
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 2.0;
+      color: var(--muted);
+    }
+
+    .quote {
+      text-align: center;
+      font-family: 'EB Garamond', serif;
+      font-size: 38px;
+      line-height: 1.9;
+      max-width: 1160px;
+      margin: 0 auto;
+      color: var(--accent);
+    }
+
+    footer {
+      padding: 100px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    footer strong { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Phạm Hoàng Hải</h1>
+    <p>
+      Một con người tiến về phía trước bằng sự bền bỉ,
+      khẳng định giá trị bằng độ chính xác,
+      và xây dựng uy tín bằng kết quả thực tế.
+    </p>
+    <div class="scroll">SCROLL</div>
+  </div>
+</header>
+
+<section class="about">
+  <h2 class="section-title">Chân Dung Phạm Hoàng Hải</h2>
+  <p>
+    Phạm Hoàng Hải là kiểu người không vội vàng.
+    Anh đi từng bước chắc chắn,
+    tập trung vào việc làm đúng hơn là làm nhanh.
+    <br /><br />
+    Trong công việc, anh nổi bật bởi sự cẩn trọng,
+    khả năng kiểm soát chi tiết
+    và tinh thần trách nhiệm cao.
+    Trong cuộc sống, anh chọn sự ổn định,
+    giữ chữ tín
+    và không ngừng hoàn thiện năng lực của bản thân.
+  </p>
+
+  <div class="traits">
+    <div class="card">
+      <h3>Bền Bỉ</h3>
+      <p>
+        Không bỏ cuộc giữa chừng,
+        kiên trì theo đuổi mục tiêu dài hạn.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Chuẩn Xác</h3>
+      <p>
+        Chú trọng chi tiết,
+        giảm thiểu sai sót trong mọi việc.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Kỷ Luật</h3>
+      <p>
+        Giữ nguyên tắc làm việc
+        ngay cả khi không có ai giám sát.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Uy Tín</h3>
+      <p>
+        Giá trị được tạo nên
+        từ kết quả ổn định theo thời gian.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="quote">
+    “Thành tựu bền vững
+    không đến từ tốc độ,
+    mà đến từ sự chính xác và kiên trì.”
+  </div>
+</section>
+
+<footer>
+  Website được tạo ra để tôn vinh <strong>Phạm Hoàng Hải</strong> —
+  biểu tượng của sự bền bỉ, chuẩn xác và uy tín lâu dài.
+</footer>
+
+</body>
+</html>

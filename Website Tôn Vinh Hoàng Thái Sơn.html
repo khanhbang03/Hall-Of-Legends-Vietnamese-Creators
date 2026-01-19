@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hoàng Thái Sơn – Khí Chất & Tầm Nhìn</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #050608;
+      --accent: #e3b873;
+      --royal: #6fa8dc;
+      --text: #f1f4fb;
+      --muted: #9aa3b0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #0c1424, var(--bg));
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    header h1 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 72px;
+      letter-spacing: 1.3px;
+      color: var(--accent);
+      margin-bottom: 26px;
+    }
+
+    header p {
+      font-size: 22px;
+      color: var(--muted);
+      max-width: 900px;
+      margin: 0 auto;
+      line-height: 1.95;
+    }
+
+    .scroll {
+      margin-top: 84px;
+      font-size: 14px;
+      letter-spacing: 4px;
+      color: var(--royal);
+      animation: fade 2s infinite;
+    }
+
+    @keyframes fade {
+      0%,100% { opacity: 0.25; }
+      50% { opacity: 1; }
+    }
+
+    section {
+      padding: 120px 10%;
+    }
+
+    .section-title {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 46px;
+      margin-bottom: 40px;
+      color: var(--accent);
+    }
+
+    .about p {
+      font-size: 19px;
+      line-height: 2.1;
+      max-width: 1040px;
+    }
+
+    .qualities {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 54px;
+      margin-top: 100px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #141c2f, #090d18);
+      border-radius: 40px;
+      padding: 50px;
+      transition: transform 0.45s ease, box-shadow 0.45s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-26px);
+      box-shadow: 0 48px 140px rgba(0,0,0,0.7);
+    }
+
+    .card h3 {
+      font-family: 'Libre Baskerville', serif;
+      font-size: 28px;
+      margin-bottom: 22px;
+      color: var(--royal);
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 2.0;
+      color: var(--muted);
+    }
+
+    .quote {
+      text-align: center;
+      font-family: 'Libre Baskerville', serif;
+      font-size: 38px;
+      line-height: 1.9;
+      max-width: 1140px;
+      margin: 0 auto;
+      color: var(--accent);
+    }
+
+    footer {
+      padding: 96px 20px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--muted);
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    footer strong { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Hoàng Thái Sơn</h1>
+    <p>
+      Một con người mang khí chất điềm đạm,
+      dẫn dắt bằng tầm nhìn,
+      và tạo ảnh hưởng bằng sự chín chắn trong từng quyết định.
+    </p>
+    <div class="scroll">SCROLL</div>
+  </div>
+</header>
+
+<section class="about">
+  <h2 class="section-title">Chân Dung Hoàng Thái Sơn</h2>
+  <p>
+    Hoàng Thái Sơn là kiểu người toát ra sự tin cậy ngay từ lần tiếp xúc đầu tiên.
+    Anh không cần thể hiện quá nhiều,
+    bởi phong thái bình tĩnh và tư duy mạch lạc đã nói lên tất cả.
+    <br /><br />
+    Trong công việc, anh nhìn xa hơn kết quả trước mắt,
+    cân nhắc hệ quả dài hạn
+    và luôn chọn giải pháp mang lại giá trị bền vững.
+    Trong cuộc sống, anh giữ sự chừng mực,
+    tôn trọng nguyên tắc và không ngừng hoàn thiện bản thân.
+  </p>
+
+  <div class="qualities">
+    <div class="card">
+      <h3>Khí Chất</h3>
+      <p>
+        Điềm đạm, chững chạc,
+        tạo cảm giác an tâm cho người xung quanh.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Tầm Nhìn</h3>
+      <p>
+        Nhìn xa trông rộng,
+        không bị cuốn theo lợi ích ngắn hạn.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Chín Chắn</h3>
+      <p>
+        Suy nghĩ thấu đáo,
+        hành động có cân nhắc.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Ảnh Hưởng</h3>
+      <p>
+        Dẫn dắt bằng cách sống
+        và quyết định mỗi ngày.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="quote">
+    “Giá trị lớn nhất của một con người
+    không nằm ở lời nói,
+    mà ở tầm nhìn và sự chín chắn được giữ vững theo thời gian.”
+  </div>
+</section>
+
+<footer>
+  Website được tạo ra để tôn vinh <strong>Hoàng Thái Sơn</strong> —
+  biểu tượng của khí chất, tầm nhìn và sự chín chắn bền vững.
+</footer>
+
+</body>
+</html>
